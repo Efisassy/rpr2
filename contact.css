@@ -1,0 +1,57 @@
+<section class="contact">
+        <div class="content">
+
+        </div>
+        <div class="container cool">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>6778 tesasddo raod,<br>madina,ashaman, <br>45040049</p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>6778 tesasddo raod,<br>madina,ashaman, <br>45040049</p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>6778 tesasddo raod,<br>madina,ashaman, <br>45040049</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" placeholder="" required="required">
+                        <span>Full name</span>
+                      
+                    </div> 
+                    <div class="inputbox">
+                        <input type="text" placeholder="" required="required">
+                        <span>Email</span>
+                      
+                    </div>  
+                    <div class="inputbox">
+                        <textarea name="" id="" cols="30" rows="10" required="'required"></textarea>
+                        <span>Type your message...</span>
+                      
+                    </div>  
+                    <div class="inputbox">
+                        <input type="submit" value="Send">
+                      
+                    </div>   
+                </form>
+            </div>
+        </div>
+      </section>
