@@ -24,7 +24,7 @@ body{
 .build{
     background-image: url(pics/build.svg);
     height: 100vh;
-    max-width: 100vh;
+    
 }
 
 
@@ -348,7 +348,7 @@ hr{
 .w-100-height{
     height: 90vh;
     width: 100%;
-    filter: blur(3px);
+    
  
 }
 
