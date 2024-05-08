@@ -598,7 +598,7 @@ padding: 30px;
 }
 
 .stand{
-    height: 60px;
+    height: 90px;
   
     background-color: #ff6347;
   
@@ -612,7 +612,7 @@ padding: 30px;
 }
 
 .icons{
-    padding: 140px;
+    padding: 15px;
     font-size: 50px;
     color: red;
     font-weight: bold;
@@ -620,14 +620,14 @@ padding: 30px;
 }
 
 .icon{
-    padding: 110px;
+    padding: 15px;
     font-size: 50px;
     color: rgb(68, 107, 9);
     font-weight: bold;
 }
 
 .ico{
-    padding: 110px;
+    padding: 15px;
     font-size: 50px;
     color: blue;
     font-weight: bold;
