@@ -613,7 +613,7 @@ padding: 30px;
 
 .icons{
     padding: 15px;
-    font-size: 50px;
+    font-size: 45px;
     color: red;
     font-weight: bold;
 
@@ -621,14 +621,14 @@ padding: 30px;
 
 .icon{
     padding: 15px;
-    font-size: 50px;
+    font-size: 45px;
     color: rgb(68, 107, 9);
     font-weight: bold;
 }
 
 .ico{
     padding: 15px;
-    font-size: 50px;
+    font-size: 45px;
     color: blue;
     font-weight: bold;
 }
