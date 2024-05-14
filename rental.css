@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    overflow-x: hidden;
+ 
+
+}
+.navbar{
+    padding: 15px 15px !important;
+}
+.nav-item{
+    margin: 0px 10px;}
+
+.nav-item:hover .nav-link ::after{
+        width: 100%;
+    }
+    .btn-navbar{
+        display: inline-block;
+        padding: 10px 43px;
+        border: 1px solid rgba(36 139 255);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        background-color:  orangered;
+        transition: 0.2s ease;
+        
+    
+    }
+
+    
+
+    .navbar-brand{
+        color: orangered;
+        font-weight: bolder;
+        letter-spacing: 5px;
+        font-size: 25px;
+     
+
+    }
+    .btn-navbar:hover{
+        background-color: transparent;
+        color: rgba(255 129 57);
+        border: 1px solid rgba(255 129 57);
+    }
+    
+    .nav-link:hover{
+        color: rgba(255 129 57);
+    }
+
+    .fa-solid{
+        color: rgba(255 129 57);
+      
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    i{
+        text-decoration: none;
+    }
+span{
+    color: orange
+}
