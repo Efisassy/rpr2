@@ -64,3 +64,64 @@ body{
 span{
     color: orange
 }
+
+.stand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  
+    background-color: #ff6347;
+  
+  
+}
+
+.icons{
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.icon{
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.ico{
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+
+}
+
+.text-body-secondary{
+    flex: 1;
+}
+
+.btn-nav{
+    flex: 1;
+    text-align: right;
+}
+
+.orange{
+    padding: 10px;
+    height: 250px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
