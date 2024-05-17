@@ -329,8 +329,10 @@ hr{
 
 }
 
+
+
 .carousel-caption h5{
-    font-size: 45px;
+    font-size:35px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500px;
@@ -338,9 +340,19 @@ hr{
     text-align: left;
 }
 
+
+
+@media screen and (max-width: 600px) {
+    .carousel-caption h5 {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+}
+
+
+
 .carousel-caption p{
     width: 60px;
-    font-size: 12px;
+    font-size: 40px;
     line-height: 1;
 
     text-align: left;
@@ -643,3 +655,49 @@ font-weight: bold;
     color: orange;
 }
 
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    flex: right;
+
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+  }
+  
+  .boxx {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    margin: 0 20px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+
+
+
+  }
+
+  .boxx .count1 .count2 .count3{
+    font-size: 100px;
+
+  }
+.boxx p{
+    font-size: 18px;
+}
+
+.fa-star {
+    color:  #eb6750;
+    font-size:40px;}
+
+.fa-face-smile{
+    color:  #eb6750;
+    font-size:40px;
+}
