@@ -134,15 +134,6 @@ span{
 }
 
 
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Change height to auto */
-    background-color: rgb(242, 235, 235);
-    border-radius: 10px;
-}
-
 form {
     display: flex;
     flex-wrap: wrap;
@@ -151,25 +142,27 @@ form {
     margin: 0 auto;
 }
 
-form > div {
+form div {
     margin: 10px;
     flex: 1; /* Add flex: 1 to make each div grow to fill the available space */
 }
 
 label {
     padding: 10px;
+    display: block; /* Ensure label and input are stacked */
 }
 
 .dropdown {
     position: relative;
 }
 
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
     z-index: 1000;
 }
@@ -182,11 +175,39 @@ label {
 .dropdown-content p:hover {
     background-color: #ddd;
 }
+.explore{
+    background-color:  orange; ;
+    border-radius: 5px;
+    border: none;
+}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     form {
         flex-direction: column;
+        align-items: stretch; /* Ensure form items take full width */
+    }
+
+    form div {
+        width: 100%; /* Make sure each div takes the full width */
+        margin: 5px 0; /* Reduce margin for smaller screens */
+    }
+
+    label {
+        width: 100%; /* Make labels take full width */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    input, .hey {
+        width: 100%; /* Make inputs and buttons take full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        border: solid 2px orange;
+        border-radius: 8px;
+    }
+    .explore{
+        background-color:  orange; ;
+        border-radius: 5px;
+        border: none;
     }
 }
 .sub{
@@ -215,42 +236,25 @@ label {
 }
 
 
-/* CEO Section Styling */
-.ceo-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: #f5f5f5; /* Background color for the CEO section */
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-30px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-.ceo-section .statement {
-    flex: 1;
-    font-size: 1.2em;
-    margin-right: 20px;
-}
-
-.ceo-section .ceo-image img {
-    width: 300px; /* Adjust size as needed */
-    border-radius: 10px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    /* CEO Section: Stack vertically on small screens */
-    .ceo-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ceo-section .statement {
-        margin-right: 0;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .ceo-section .ceo-image img {
-        width: 80%; /* Make the image responsive */
-        max-width: 300px;
-    }
+#movingImage {
+    animation: moveLeftRight 3s ease-in-out infinite;
+    
 }
