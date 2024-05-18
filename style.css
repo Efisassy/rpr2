@@ -662,42 +662,96 @@ font-weight: bold;
 
 }
 
-.about {
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background: url('pics/apart.jpg') no-repeat center center/cover; /* Fullscreen background image */
+}
+
+.hello {
+    position: absolute;
+    bottom: 20%; /* Adjusted to move icons up */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    
-  }
-  
-  .boxx {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 170px;
-    margin: 0 20px;
-    background-color: white;
-    color: black;
-    font-size: 40px;
-
-
-
-  }
-
-  .boxx .count1 .count2 .count3{
-    font-size: 100px;
-
-  }
-.boxx p{
-    font-size: 18px;
 }
 
-.fa-star {
-    color:  #eb6750;
-    font-size:40px;}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-.fa-face-smile{
-    color:  #eb6750;
-    font-size:40px;
+.boxx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fa-star, .fa-face-smile, .fa-house {
+    color: #eb6750;
+    font-size: 30px;
+}
+
+.boxx p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.count-container {
+    font-size: 40px; /* Increase the size of the numbers */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hello {
+        bottom: 10%; /* Adjusted to move icons up slightly */
+        transform: translateY(0); /* Remove vertical transform */
+    }
+
+    .about {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center align vertically */
+    }
+
+    .boxx {
+        width: 100px; /* Reduce width for smaller screens */
+        height: 100px; /* Reduce height for smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing between boxes */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .fa-star, .fa-face-smile, .fa-house {
+        font-size: 24px; /* Adjust icon size for smaller screens */
+    }
+
+    .boxx p {
+        font-size: 12px; /* Adjust text size for smaller screens */
+    }
+
+    .count-container {
+        font-size: 30px; /* Adjust number size for smaller screens */
+    }
 }
