@@ -174,11 +174,20 @@ label {
 
 .dropdown-content p:hover {
     background-color: #ddd;
+
 }
+
 .explore{
     background-color:  orange; ;
     border-radius: 5px;
     border: none;
+}
+
+.hey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange; ; 
 }
 
 /* Media query for smaller screens */
@@ -198,11 +207,25 @@ label {
         padding: 5px; /* Adjust padding for smaller screens */
     }
 
-    input, .hey {
+    input {
         width: 100%; /* Make inputs and buttons take full width */
         padding: 10px; /* Adjust padding for smaller screens */
         border: solid 2px orange;
         border-radius: 8px;
+    }
+    input .hey {
+        width: 100%; /* Make inputs and buttons take full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        border: solid 2px orange;
+        border-radius: 8px;
+    }
+
+    .hey{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: orange; ;
+    
     }
     .explore{
         background-color:  orange; ;
