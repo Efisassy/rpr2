@@ -8,23 +8,50 @@ body{
 
 }
 
-.spacer{
+/* General styles */
+.spacer {
     aspect-ratio: 960/300;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    
-  
-    
-
 }
 
-.build{
+.build {
     background-image: url(pics/build.svg);
     height: 100vh;
-    
+}
+
+.focus {
+    position: relative;
+    text-align: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text-container {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-overlay {
+        top: auto;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+
+    .text-container {
+        font-size: 25px;
+    }
 }
 
 
@@ -201,15 +228,7 @@ h1{
     align-items: center;
 }
 
-.focus{
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-weight: bolder;
-    font-size: 35px;
-}
+
  .light{
   
     height: 100%;
@@ -754,4 +773,78 @@ body, html {
     .count-container {
         font-size: 30px; /* Adjust number size for smaller screens */
     }
+}
+
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CEO Section Styling */
+.ceo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5; /* Background color for the CEO section */
+}
+
+.ceo-section .statement {
+    flex: 1;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.ceo-section .ceo-image img {
+    width: 300px; /* Adjust size as needed */
+    border-radius: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* CEO Section: Stack vertically on small screens */
+    .ceo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ceo-section .statement {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .ceo-section .ceo-image img {
+        width: 80%; /* Make the image responsive */
+        max-width: 300px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: white;
+    padding: 20px 50px; /* Ensure padding is set directly on the footer */
+}
+
+footer .bookstore,
+footer .book {
+    font-weight: bold;
+}
+
+footer .list-inline-item a {
+    font-size: 23px;
+    color: white;
+    margin: 0 10px;
+}
+
+footer hr {
+    border-top: 1px solid white;
+}
+
+footer p, footer a {
+    color: white;
+    text-decoration: none;
 }

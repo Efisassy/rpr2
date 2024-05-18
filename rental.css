@@ -213,3 +213,44 @@ label {
         max-width: 600px; /* Set a larger maximum width */
     }
 }
+
+
+/* CEO Section Styling */
+.ceo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5; /* Background color for the CEO section */
+}
+
+.ceo-section .statement {
+    flex: 1;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.ceo-section .ceo-image img {
+    width: 300px; /* Adjust size as needed */
+    border-radius: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* CEO Section: Stack vertically on small screens */
+    .ceo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ceo-section .statement {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .ceo-section .ceo-image img {
+        width: 80%; /* Make the image responsive */
+        max-width: 300px;
+    }
+}
