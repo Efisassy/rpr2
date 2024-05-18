@@ -341,33 +341,67 @@ hr{
     color: black;
 }
 
-.carousel-caption{
-    text-align: left;
-    margin-bottom: 200px;
-    z-index: 2;
-
-}
 
 
 
-.carousel-caption h5{
-    font-size:35px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500px;
-    line-height: 60px;
-    text-align: left;
-}
+
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .voom {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .voom {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .voom p {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .voom {
+                bottom: 20px;
+                top: auto;
+            }
+
+            .voom p {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
 
 
 
-@media screen and (max-width: 600px) {
-    .carousel-caption h5 {
-        font-size: 16px; /* Adjust the font size as needed */
-    }
-}
 
 
+        
 
 .carousel-caption p{
     width: 60px;
