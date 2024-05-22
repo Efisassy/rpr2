@@ -364,40 +364,7 @@ hr{
             z-index: 1;
         }
 
-        .voom {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            z-index: 2;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        @media (min-width: 768px) {
-            .voom {
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .voom p {
-                font-size: 4rem;
-                font-weight: bold;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .voom {
-                bottom: 20px;
-                top: auto;
-            }
-
-            .voom p {
-                font-size: 2rem;
-                font-weight: bold;
-            }
-        }
-
-
+       
 
 
 
