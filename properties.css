@@ -52,7 +52,7 @@ body{
     }
 
     .fa-solid{
-        color: rgba(255 129 57);
+        color: rgb(131, 130, 130);
       
         font-size: 25px;
         padding: 20px;
@@ -115,20 +115,29 @@ body{
             font-weight: bold;
         }
     }
-.stand{
-    height: 50px;
-  
-    background-color: #ff6347;
-  
-}
-
-.stand{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}
-
+    .stand {
+        background-color:  #ff6347;; /* Dark background for contrast */
+        padding: 10px 0; /* Padding to give some space */
+    }
+    
+    .icon-link {
+        color: white; /* White color for the icons */
+        font-size: 2rem; /* Increase icon size */
+        margin: 0 15px; /* Margin between icons */
+        text-align: center;
+    }
+    
+    .icon-link:hover {
+        color: #ddd; /* Slight color change on hover */
+    }
+    
+    @media (max-width: 767.98px) {
+        .icon-link {
+            font-size: 1.5rem; /* Adjust icon size for smaller screens */
+            margin: 0 10px; /* Adjust margin for smaller screens */
+        }
+    }
+    
 
 .card-img-top {
     width: 100%;
@@ -137,4 +146,99 @@ body{
 }
 .btn-navbar {
     margin-left: 10px;
+}
+
+
+.title-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-icons h5 {
+    margin: 0;
+}
+
+.title-icons .icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.title-icons .icon-box {
+    background-color: #f0f0f0; /* Ash background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title-icons .icon-box i {
+    font-size: 1.2rem; /* Adjust the size of the icons as needed */
+}
+
+.details-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.details-icons .icon-detail {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Ash background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.details-icons .icon-detail i {
+    font-size: 1.2rem; /* Adjust the size of the icons as needed */
+    margin-right: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.text-overlay {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for contrast */
+    border-radius: 5px;
+}
+
+.form-overlay {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for contrast */
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: rgb(255, 129, 57);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(230, 115, 50);
+}
+
+@media (max-width: 767.98px) {
+    .text-overlay, .form-overlay {
+        margin-top: 20px;
+    }
+}
+
+
+
+.flip-book-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #f8f9fa; /* Desired background color */
+    transform: skewX(-10deg) translateY(-50px); /* Skew and translate */
+    z-index: 0; /* Ensure it's behind other content */
 }
